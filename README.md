@@ -70,10 +70,7 @@
 
 ## 参考链接(特别感谢以下博客的作者)
 
-[移动前端开发之viewport的深入理解](https://www.cnblogs.com/2050/p/3877280.html)
-[深入理解移动端像素知识与Viewport知识](https://blog.csdn.net/aiolos1111/article/details/51967744)
-[Meta viewport (视口元信息标签)](https://blog.csdn.net/aiolos1111/article/details/51919795)
-[移动端页面适配———多方案解析](https://juejin.im/entry/59ca3c6df265da064f2024af)
+[移动前端开发之viewport的深入理解](https://www.cnblogs.com/2050/p/3877280.html)</br>[深入理解移动端像素知识与Viewport知识](https://blog.csdn.net/aiolos1111/article/details/51967744)</br>[Meta viewport (视口元信息标签)](https://blog.csdn.net/aiolos1111/article/details/51919795)</br>[移动端页面适配———多方案解析](https://juejin.im/entry/59ca3c6df265da064f2024af)
 
 
 
