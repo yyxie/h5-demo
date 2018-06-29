@@ -1,7 +1,7 @@
 var dpr, scale, timer, rem
 var style = document.createElement('style')
 var metaEl = document.createElement('meta')
-dpr = window.devicePixelRatio || 1
+dpr = Math.floor(window.devicePixelRatio || 1) //对于有dpr不是整数的设备进行向下取整
 scale = 1 / dpr
 
 /**

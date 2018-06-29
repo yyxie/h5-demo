@@ -46,7 +46,7 @@
  我们的目的是将1设备像素等于1css像素,鉴于这个目的我们说说我的方案.具体代码可看我写的[demo](https://github.com/yyxie/h5-demo)
  <b>根据不同屏幕来动态写入font-size和改变布局视口，并以rem作为宽度单位</b>
 - 1.使用meta标签对viewport进行设置达到1css像素等于1个设备像素 以dpr为2为例 即 <meta name="viewport" content="width=device-width,initial-scale=0.5,max-scale=0.5,min-scale=0.5">
-    > 解释: 首先我们要知道如果不设置meta viewport标签，那么移动设备上浏览器默认的layout viewport宽度值为980px，1024px等这些,所以第一步我们先将视口宽度设置和布局宽度一样即在html头部设置<meta name="viewport" content="width=device-width,initial-scale=1">.然后通过js来获取不同的dpr获取scale=1/dpr来设置<meta name="viewport" content="width=device-width,initial-scale=scale,max-scale=scale,min-scale=scale">这样设置
+    > 解释: 首先我们要知道如果不设置meta viewport标签，那么移动设备上浏览器默认的layout viewport宽度值为980px，1024px等这些,所以第一步我们先将视口宽度设置和布局宽度一样即在html头部设置<meta name="viewport" content="width=device-width,initial-scale=1">（这个时候我们不做下一步的操作也能做到自适应网页，但有1px的问题存在，我们可以通过接下来的这一步来解决这个问题）。然后通过js来获取不同的dpr获取scale=1/dpr来设置<meta name="viewport" content="width=device-width,initial-scale=scale,max-scale=scale,min-scale=scale">这样设置就可以解决1px的问题了
 - 2.将屏幕分为固定的块数10：作为1rem所代表的px值 ,并给html设置font-size为这个值
     > 注:屏幕即布局视口可通过document.documentElement.clientWidth获得.这里将屏幕分成10等份,当然你也可以分成其他等份,不过最好是10的倍数,这样我们算出的rem小数点也会少些,这样还原度也会高些)`
 这样在任何屏幕下，总长度都为10rem。1rem对应的值也不固定，与屏幕的布局视口宽度有关。
